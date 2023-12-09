@@ -3,7 +3,7 @@
 
 /** funkcja wypisuje podana wartosc 
 @param x - wartosc do wypisania
-@date 09.12.2023
+@date 09.12.2022
 @return niczego nie zwraca
 */
 void printus(int x);
