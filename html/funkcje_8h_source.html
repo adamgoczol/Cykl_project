@@ -82,15 +82,25 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#ifndef FUNKCJE_H</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#define FUNKCJE_H</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcje_8h.html#aff444a8f9ff1197f92faa55354ce25ee">printus</a>(<span class="keywordtype">int</span> x);</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">int</span> <a class="code hl_function" href="funkcje_8h.html#a328823a10206cf875bbf28e39ec2a152">sus</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> x1);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif </span><span class="comment">// !FUNKCJE_H</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="ttc" id="afunkcje_8h_html_a328823a10206cf875bbf28e39ec2a152"><div class="ttname"><a href="funkcje_8h.html#a328823a10206cf875bbf28e39ec2a152">sus</a></div><div class="ttdeci">int sus(const double x1)</div><div class="ttdoc">funkcja nie robi nic ciekawego</div><div class="ttdef"><b>Definition</b> funkcje.cpp:3</div></div>
-<div class="ttc" id="afunkcje_8h_html_aff444a8f9ff1197f92faa55354ce25ee"><div class="ttname"><a href="funkcje_8h.html#aff444a8f9ff1197f92faa55354ce25ee">printus</a></div><div class="ttdeci">void printus(int x)</div><div class="ttdef"><b>Definition</b> funkcje.cpp:7</div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">   17</a></span><span class="keyword">typedef</span> std::vector&lt;std::pair&lt;int, int&gt;&gt; <a class="code hl_typedef" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_typedef" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a> <a class="code hl_function" href="funkcje_8h.html#a6ec432145e723804f4e2036fe6867d44">czytaj_pary</a>(<span class="keyword">const</span> std::string&amp; nazwa_pliku);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="funkcje_8h.html#a2bd41d1a48c7bfb6a4a5fb8033574af1">wypisz_pary</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a>&amp; pary);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">// !FUNKCJE_H</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="ttc" id="afunkcje_8h_html_a2bd41d1a48c7bfb6a4a5fb8033574af1"><div class="ttname"><a href="funkcje_8h.html#a2bd41d1a48c7bfb6a4a5fb8033574af1">wypisz_pary</a></div><div class="ttdeci">void wypisz_pary(const vec_ark &amp;pary)</div><div class="ttdoc">funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu</div><div class="ttdef"><b>Definition</b> funkcje.cpp:35</div></div>
+<div class="ttc" id="afunkcje_8h_html_a6ec432145e723804f4e2036fe6867d44"><div class="ttname"><a href="funkcje_8h.html#a6ec432145e723804f4e2036fe6867d44">czytaj_pary</a></div><div class="ttdeci">vec_ark czytaj_pary(const std::string &amp;nazwa_pliku)</div><div class="ttdoc">funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par</div><div class="ttdef"><b>Definition</b> funkcje.cpp:10</div></div>
+<div class="ttc" id="afunkcje_8h_html_abe57d33714c019d747b56f67d1e812d6"><div class="ttname"><a href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; int, int &gt; &gt; vec_ark</div><div class="ttdoc">vector par wierzcholkow grafu</div><div class="ttdef"><b>Definition</b> funkcje.h:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

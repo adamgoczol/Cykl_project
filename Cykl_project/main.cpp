@@ -5,7 +5,9 @@
 
 int main()
 {
-    printus(21);
-    std::cout << sus(22.2) << std::endl;
+    vec_ark pary = czytaj_pary("grafy.txt");
+
+    wypisz_pary(pary);
+
     return 0;
 }

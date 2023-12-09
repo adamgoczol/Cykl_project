@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['printus_0',['printus',['../funkcje_8h.html#aff444a8f9ff1197f92faa55354ce25ee',1,'funkcje.cpp']]]
+  ['czytaj_5fpary_0',['czytaj_pary',['../funkcje_8h.html#a6ec432145e723804f4e2036fe6867d44',1,'funkcje.cpp']]]
 ];

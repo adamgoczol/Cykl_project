@@ -71,72 +71,88 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#typedef-members">Definicje typów</a> &#124;
 <a href="#func-members">Funkcje</a>  </div>
   <div class="headertitle"><div class="title">Dokumentacja pliku funkcje.h</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div>
 <p><a href="funkcje_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Definicje typów</h2></td></tr>
+<tr class="memitem:abe57d33714c019d747b56f67d1e812d6" id="r_abe57d33714c019d747b56f67d1e812d6"><td class="memItemLeft" align="right" valign="top"><a id="abe57d33714c019d747b56f67d1e812d6" name="abe57d33714c019d747b56f67d1e812d6"></a>
+typedef std::vector&lt; std::pair&lt; int, int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>vec_ark</b></td></tr>
+<tr class="memdesc:abe57d33714c019d747b56f67d1e812d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">vector par wierzcholkow grafu <br /></td></tr>
+<tr class="separator:abe57d33714c019d747b56f67d1e812d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funkcje</h2></td></tr>
-<tr class="memitem:aff444a8f9ff1197f92faa55354ce25ee" id="r_aff444a8f9ff1197f92faa55354ce25ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#aff444a8f9ff1197f92faa55354ce25ee">printus</a> (int x)</td></tr>
-<tr class="separator:aff444a8f9ff1197f92faa55354ce25ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328823a10206cf875bbf28e39ec2a152" id="r_a328823a10206cf875bbf28e39ec2a152"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a328823a10206cf875bbf28e39ec2a152">sus</a> (const double x1)</td></tr>
-<tr class="memdesc:a328823a10206cf875bbf28e39ec2a152"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja nie robi nic ciekawego  <br /></td></tr>
-<tr class="separator:a328823a10206cf875bbf28e39ec2a152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec432145e723804f4e2036fe6867d44" id="r_a6ec432145e723804f4e2036fe6867d44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a6ec432145e723804f4e2036fe6867d44">czytaj_pary</a> (const std::string &amp;nazwa_pliku)</td></tr>
+<tr class="memdesc:a6ec432145e723804f4e2036fe6867d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par  <br /></td></tr>
+<tr class="separator:a6ec432145e723804f4e2036fe6867d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd41d1a48c7bfb6a4a5fb8033574af1" id="r_a2bd41d1a48c7bfb6a4a5fb8033574af1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a2bd41d1a48c7bfb6a4a5fb8033574af1">wypisz_pary</a> (const <a class="el" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a> &amp;pary)</td></tr>
+<tr class="memdesc:a2bd41d1a48c7bfb6a4a5fb8033574af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu  <br /></td></tr>
+<tr class="separator:a2bd41d1a48c7bfb6a4a5fb8033574af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Dokumentacja funkcji</h2>
-<a id="aff444a8f9ff1197f92faa55354ce25ee" name="aff444a8f9ff1197f92faa55354ce25ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff444a8f9ff1197f92faa55354ce25ee">&#9670;&#160;</a></span>printus()</h2>
+<a id="a6ec432145e723804f4e2036fe6867d44" name="a6ec432145e723804f4e2036fe6867d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec432145e723804f4e2036fe6867d44">&#9670;&#160;</a></span>czytaj_pary()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void printus </td>
+          <td class="memname"><a class="el" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a> czytaj_pary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>funkcja wypisuje podana wartosc </p><dl class="params"><dt>Parametry</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>- wartosc do wypisania </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section date"><dt>Data</dt><dd>09.12.2022 </dd></dl>
-<dl class="section return"><dt>Zwraca</dt><dd>niczego nie zwraca </dd></dl>
-
-</div>
-</div>
-<a id="a328823a10206cf875bbf28e39ec2a152" name="a328823a10206cf875bbf28e39ec2a152"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a328823a10206cf875bbf28e39ec2a152">&#9670;&#160;</a></span>sus()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sus </td>
-          <td>(</td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>x1</em></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>nazwa_pliku</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>funkcja nie robi nic ciekawego </p>
+<p>funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par </p>
 <dl class="params"><dt>Parametry</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x1</td><td>- dowolna wartosc double </td></tr>
+    <tr><td class="paramname">nazwa_pliku</td><td>- nazwa pliku z ktorego chcemy czytac </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Zwraca</dt><dd>zwraca wartosc 1 </dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>vector par ktore sa wierzcholkami grafu </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Do zrobienia:</a></b></dt><dd>nie wiem co robie wiec do zobaczenia w srode/czwartek </dd></dl>
+
+</div>
+</div>
+<a id="a2bd41d1a48c7bfb6a4a5fb8033574af1" name="a2bd41d1a48c7bfb6a4a5fb8033574af1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bd41d1a48c7bfb6a4a5fb8033574af1">&#9670;&#160;</a></span>wypisz_pary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wypisz_pary </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="funkcje_8h.html#abe57d33714c019d747b56f67d1e812d6">vec_ark</a> &amp;&#160;</td>
+          <td class="paramname"><em>pary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pary</td><td>- vektor zawierajacy pary wierzcholkow grafu </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

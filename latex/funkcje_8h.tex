@@ -1,47 +1,59 @@
 \doxysection{Dokumentacja pliku funkcje.\+h}
 \hypertarget{funkcje_8h}{}\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsubsection*{Definicje typów}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}\label{funkcje_8h_abe57d33714c019d747b56f67d1e812d6} 
+typedef std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ {\bfseries vec\+\_\+ark}
+\begin{DoxyCompactList}\small\item\em vector par wierzcholkow grafu \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{funkcje_8h_aff444a8f9ff1197f92faa55354ce25ee}{printus}} (int x)
-\item 
-int \mbox{\hyperlink{funkcje_8h_a328823a10206cf875bbf28e39ec2a152}{sus}} (const double x1)
-\begin{DoxyCompactList}\small\item\em funkcja nie robi nic ciekawego \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \mbox{\hyperlink{funkcje_8h_a6ec432145e723804f4e2036fe6867d44}{czytaj\+\_\+pary}} (const std\+::string \&nazwa\+\_\+pliku)
+\begin{DoxyCompactList}\small\item\em funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1}{wypisz\+\_\+pary}} (const \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \&pary)
+\begin{DoxyCompactList}\small\item\em funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Dokumentacja funkcji}
-\Hypertarget{funkcje_8h_aff444a8f9ff1197f92faa55354ce25ee}\label{funkcje_8h_aff444a8f9ff1197f92faa55354ce25ee} 
-\index{funkcje.h@{funkcje.h}!printus@{printus}}
-\index{printus@{printus}!funkcje.h@{funkcje.h}}
-\doxysubsubsection{\texorpdfstring{printus()}{printus()}}
-{\footnotesize\ttfamily void printus (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
-
-funkcja wypisuje podana wartosc 
-\begin{DoxyParams}{Parametry}
-{\em x} & -\/ wartosc do wypisania \\
-\hline
-\end{DoxyParams}
-\begin{DoxyDate}{Data}
-09.\+12.\+2022 
-\end{DoxyDate}
-\begin{DoxyReturn}{Zwraca}
-niczego nie zwraca 
-\end{DoxyReturn}
-\Hypertarget{funkcje_8h_a328823a10206cf875bbf28e39ec2a152}\label{funkcje_8h_a328823a10206cf875bbf28e39ec2a152} 
-\index{funkcje.h@{funkcje.h}!sus@{sus}}
-\index{sus@{sus}!funkcje.h@{funkcje.h}}
-\doxysubsubsection{\texorpdfstring{sus()}{sus()}}
-{\footnotesize\ttfamily int sus (\begin{DoxyParamCaption}\item[{const double}]{x1 }\end{DoxyParamCaption})}
+\Hypertarget{funkcje_8h_a6ec432145e723804f4e2036fe6867d44}\label{funkcje_8h_a6ec432145e723804f4e2036fe6867d44} 
+\index{funkcje.h@{funkcje.h}!czytaj\_pary@{czytaj\_pary}}
+\index{czytaj\_pary@{czytaj\_pary}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{czytaj\_pary()}{czytaj\_pary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} czytaj\+\_\+pary (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
 
 
 
-funkcja nie robi nic ciekawego 
+funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par 
 
 
 \begin{DoxyParams}{Parametry}
-{\em x1} & -\/ dowolna wartosc double \\
+{\em nazwa\+\_\+pliku} & -\/ nazwa pliku z ktorego chcemy czytac \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-zwraca wartosc 1 
+vector par ktore sa wierzcholkami grafu 
 \end{DoxyReturn}
+\begin{DoxyRefDesc}{Do zrobienia}
+\item[\mbox{\hyperlink{todo__todo000001}{Do zrobienia}}]nie wiem co robie wiec do zobaczenia w srode/czwartek \end{DoxyRefDesc}
+\Hypertarget{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1}\label{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1} 
+\index{funkcje.h@{funkcje.h}!wypisz\_pary@{wypisz\_pary}}
+\index{wypisz\_pary@{wypisz\_pary}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypisz\_pary()}{wypisz\_pary()}}
+{\footnotesize\ttfamily void wypisz\+\_\+pary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \&}]{pary }\end{DoxyParamCaption})}
+
+
+
+funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu 
+
+
+\begin{DoxyParams}{Parametry}
+{\em pary} & -\/ vektor zawierajacy pary wierzcholkow grafu \\
+\hline
+\end{DoxyParams}

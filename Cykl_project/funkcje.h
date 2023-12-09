@@ -3,21 +3,35 @@
 #ifndef FUNKCJE_H
 #define FUNKCJE_H
 
-/** funkcja wypisuje podana wartosc z
-@param x - wartosc do wypisania
-@date 09.12.2022
-@return niczego nie zwraca
-*/
-void printus(int x);
+#include <iostream>
+#include <fstream>
+#include <utility>
+#include <vector>
+#include <string>
+#include <sstream>
 
-/** 
- * @brief funkcja nie robi nic ciekawego
- * @param x1 - dowolna wartosc double 
- * @return zwraca wartosc 1
+/**
+ * @brief vector par wierzcholkow grafu
 */
 
-int sus(const double x1);
+typedef std::vector<std::pair<int, int>> vec_ark;
 
+
+/**
+ * @brief funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par
+ * @param nazwa_pliku - nazwa pliku z ktorego chcemy czytac
+ * @return vector par ktore sa wierzcholkami grafu
+ * @todo nie wiem co robie wiec do zobaczenia w srode/czwartek
+*/
+
+vec_ark czytaj_pary(const std::string& nazwa_pliku);
+
+/**
+ * @brief funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu
+ * @param pary - vektor zawierajacy pary wierzcholkow grafu
+*/
+
+void wypisz_pary(const vec_ark& pary);
 
 #endif // !FUNKCJE_H
 
