@@ -3,7 +3,7 @@
 #ifndef FUNKCJE_H
 #define FUNKCJE_H
 
-/** funkcja wypisuje podana wartosc 
+/** funkcja wypisuje podana wartosc z
 @param x - wartosc do wypisania
 @date 09.12.2022
 @return niczego nie zwraca
