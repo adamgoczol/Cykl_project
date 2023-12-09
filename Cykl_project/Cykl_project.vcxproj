@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Cykl_project.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="funkcje.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="funkcje.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
