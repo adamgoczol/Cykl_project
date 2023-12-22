@@ -5,9 +5,11 @@
 
 int main()
 {
-    vec_ark pary = czytaj_pary("grafy.txt");
+    Graph graph = czytaj_graf("grafy.txt");
 
-    wypisz_pary(pary);
+    Cycles cycles = szukaj_cyklow(graph);
+
+    wyswietl_cykle(cycles);
 
     return 0;
 }
