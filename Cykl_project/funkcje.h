@@ -12,21 +12,22 @@
 #include <sstream>
 #include <map>
 #include <algorithm>
+#include <fstream>
 
 /**
- * @brief mapa zwierajaca wierzcholki grafu skierowanego, np 'a' -> 'b' oznacza ¿e 'a' jest polaczone z 'b', a 'b' z 'a' juz nie 
+ * @brief mapa zwierajaca wierzcholki grafu skierowanego, np 'a' -> 'b' oznacza ze 'a' jest polaczone z 'b', a 'b' z 'a' juz nie 
 */
 
 typedef std::map<int, std::vector<int>> Graph;
 
 /**
- * @brief set zawierajacy pojedynczy cykl z grafu skierowanego np ('a' -> 'b' -> 'c', z czego cykl konczy sie na 'c', nie na 'a')
+ * @brief vektor zawierajacy pojedynczy cykl z grafu skierowanego np ('a' -> 'b' -> 'c', z czego cykl konczy sie na 'c', nie na 'a')
 */
 
 typedef std::vector<int> Cycle;
 
 /**
- * @brief vektor zaierajacy wszystkie cykle wystepujace w grafie skierowanym
+ * @brief vektor zawierajacy wszystkie cykle wystepujace w grafie skierowanym
 */
 
 typedef std::vector<Cycle> Cycles;
@@ -42,10 +43,10 @@ Graph czytaj_graf(const std::string& nazwa_pliku);
 
 /**
  * @brief funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -> y)
- * @param pary - mapa zawierajaca graf skierowany
+ * @param graph - mapa zawierajaca graf skierowany
 */
 
-void wypisz_graf(const Graph& pary);
+void wypisz_graf(const Graph& graph);
 
 /**
  * @brief funkcja zwraca znalezione cykle w podanym grafie skierowanym
@@ -62,11 +63,29 @@ Cycles szukaj_cyklow(const Graph& graph);
  * @param node - aktualnie sprawdzana krawedz grafu skierowanego
  * @param cycles - vektor zawierajacy znalezione cykle
  * @param cycle - aktualnie sprawdzany cykl
-*/
+ * @param visited - odwiedzone krawedzie
+ * @param depth - glebokosc rekurencji
+ */
 
 void podszukanie(const Graph& graph, const int starting, int node,
     Cycles& cycles, Cycle cycle, std::set<int> visited, int depth);
 
+/**
+ * @brief funkcja wyswietla podany vektor cyklow
+ * @param cycles - vektor zawierajacy cykle do wyswietlenia
+*/
+
 void wyswietl_cykle(const Cycles& cycles);
+
+/**
+ * @brief funkcja zapisuje podany vektor cyklow do pliku
+ * @param cycles - vektor zawierajacy cykle do zapisania
+ * @param filename - nazwa pliku
+*/
+
+void zapisz_cykle(const Cycles& cycles, const std::string filename);
+
+
+
 #endif // !FUNKCJE_H
 

@@ -2,35 +2,52 @@
 \hypertarget{funkcje_8h}{}\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
 {\ttfamily \#include $<$utility$>$}\newline
 {\ttfamily \#include $<$vector$>$}\newline
 {\ttfamily \#include $<$string$>$}\newline
 {\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
 \doxysubsubsection*{Definicje typów}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}\label{funkcje_8h_abe57d33714c019d747b56f67d1e812d6} 
-typedef std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ {\bfseries vec\+\_\+ark}
-\begin{DoxyCompactList}\small\item\em vector par wierzcholkow grafu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\Hypertarget{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}\label{funkcje_8h_adfd30ded4fa0120db28ead55eb863549} 
+typedef std\+::map$<$ int, std\+::vector$<$ int $>$ $>$ {\bfseries Graph}
+\begin{DoxyCompactList}\small\item\em mapa zwierajaca wierzcholki grafu skierowanego, np \textquotesingle{}a\textquotesingle{} -\/\texorpdfstring{$>$}{>} \textquotesingle{}b\textquotesingle{} oznacza ze \textquotesingle{}a\textquotesingle{} jest polaczone z \textquotesingle{}b\textquotesingle{}, a \textquotesingle{}b\textquotesingle{} z \textquotesingle{}a\textquotesingle{} juz nie \end{DoxyCompactList}\item 
+\Hypertarget{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}\label{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9} 
+typedef std\+::vector$<$ int $>$ {\bfseries Cycle}
+\begin{DoxyCompactList}\small\item\em vektor zawierajacy pojedynczy cykl z grafu skierowanego np (\textquotesingle{}a\textquotesingle{} -\/\texorpdfstring{$>$}{>} \textquotesingle{}b\textquotesingle{} -\/\texorpdfstring{$>$}{>} \textquotesingle{}c\textquotesingle{}, z czego cykl konczy sie na \textquotesingle{}c\textquotesingle{}, nie na \textquotesingle{}a\textquotesingle{}) \end{DoxyCompactList}\item 
+\Hypertarget{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}\label{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1} 
+typedef std\+::vector$<$ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} $>$ {\bfseries Cycles}
+\begin{DoxyCompactList}\small\item\em vektor zawierajacy wszystkie cykle wystepujace w grafie skierowanym \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \mbox{\hyperlink{funkcje_8h_a6ec432145e723804f4e2036fe6867d44}{czytaj\+\_\+pary}} (const std\+::string \&nazwa\+\_\+pliku)
-\begin{DoxyCompactList}\small\item\em funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1}{wypisz\+\_\+pary}} (const \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \&pary)
-\begin{DoxyCompactList}\small\item\em funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \mbox{\hyperlink{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\+\_\+graf}} (const std\+::string \&nazwa\+\_\+pliku)
+\begin{DoxyCompactList}\small\item\em funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570}{wypisz\+\_\+graf}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -\/\texorpdfstring{$>$}{>} y) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \mbox{\hyperlink{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}{szukaj\+\_\+cyklow}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em funkcja zwraca znalezione cykle w podanym grafie skierowanym \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab}{podszukanie}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph, const int starting, int node, \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} cycle, std\+::set$<$ int $>$ visited, int depth)
+\begin{DoxyCompactList}\small\item\em rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d}{wyswietl\+\_\+cykle}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles)
+\begin{DoxyCompactList}\small\item\em funkcja wyswietla podany vektor cyklow \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\+\_\+cykle}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em funkcja zapisuje podany vektor cyklow do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Dokumentacja funkcji}
-\Hypertarget{funkcje_8h_a6ec432145e723804f4e2036fe6867d44}\label{funkcje_8h_a6ec432145e723804f4e2036fe6867d44} 
-\index{funkcje.h@{funkcje.h}!czytaj\_pary@{czytaj\_pary}}
-\index{czytaj\_pary@{czytaj\_pary}!funkcje.h@{funkcje.h}}
-\doxysubsubsection{\texorpdfstring{czytaj\_pary()}{czytaj\_pary()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} czytaj\+\_\+pary (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+\Hypertarget{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}\label{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de} 
+\index{funkcje.h@{funkcje.h}!czytaj\_graf@{czytaj\_graf}}
+\index{czytaj\_graf@{czytaj\_graf}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{czytaj\_graf()}{czytaj\_graf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} czytaj\+\_\+graf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
 
 
 
-funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par 
+funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape 
 
 
 \begin{DoxyParams}{Parametry}
@@ -38,22 +55,97 @@ funkcja odczytuje zawartosc podanego pliku i konwertuje go na vector par
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
-vector par ktore sa wierzcholkami grafu 
+mapa zawierajaca graf skierowany 
 \end{DoxyReturn}
-\begin{DoxyRefDesc}{Do zrobienia}
-\item[\mbox{\hyperlink{todo__todo000001}{Do zrobienia}}]nie wiem co robie wiec do zobaczenia w srode/czwartek \end{DoxyRefDesc}
-\Hypertarget{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1}\label{funkcje_8h_a2bd41d1a48c7bfb6a4a5fb8033574af1} 
-\index{funkcje.h@{funkcje.h}!wypisz\_pary@{wypisz\_pary}}
-\index{wypisz\_pary@{wypisz\_pary}!funkcje.h@{funkcje.h}}
-\doxysubsubsection{\texorpdfstring{wypisz\_pary()}{wypisz\_pary()}}
-{\footnotesize\ttfamily void wypisz\+\_\+pary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_abe57d33714c019d747b56f67d1e812d6}{vec\+\_\+ark}} \&}]{pary }\end{DoxyParamCaption})}
+\Hypertarget{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab}\label{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab} 
+\index{funkcje.h@{funkcje.h}!podszukanie@{podszukanie}}
+\index{podszukanie@{podszukanie}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{podszukanie()}{podszukanie()}}
+{\footnotesize\ttfamily void podszukanie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph,  }\item[{const int}]{starting,  }\item[{int}]{node,  }\item[{\mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles,  }\item[{\mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}}}]{cycle,  }\item[{std\+::set$<$ int $>$}]{visited,  }\item[{int}]{depth }\end{DoxyParamCaption})}
 
 
 
-funkcja wypisuje zawartosc wektora par w formacie wierzcholkow grafu 
+rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku 
 
 
 \begin{DoxyParams}{Parametry}
-{\em pary} & -\/ vektor zawierajacy pary wierzcholkow grafu \\
+{\em graph} & -\/ graf skierowany \\
+\hline
+{\em starting} & -\/ poczatek ktory musi byc koncem cyklu \\
+\hline
+{\em node} & -\/ aktualnie sprawdzana krawedz grafu skierowanego \\
+\hline
+{\em cycles} & -\/ vektor zawierajacy znalezione cykle \\
+\hline
+{\em cycle} & -\/ aktualnie sprawdzany cykl \\
+\hline
+{\em visited} & -\/ odwiedzone krawedzie \\
+\hline
+{\em depth} & -\/ glebokosc rekurencji \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}\label{funkcje_8h_ae1a0acf88f57b3707ae80834482df172} 
+\index{funkcje.h@{funkcje.h}!szukaj\_cyklow@{szukaj\_cyklow}}
+\index{szukaj\_cyklow@{szukaj\_cyklow}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{szukaj\_cyklow()}{szukaj\_cyklow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} szukaj\+\_\+cyklow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+funkcja zwraca znalezione cykle w podanym grafie skierowanym 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graph} & -\/ graf skierowany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+vektor zawierajacy znalezione cykle 
+\end{DoxyReturn}
+\Hypertarget{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570}\label{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570} 
+\index{funkcje.h@{funkcje.h}!wypisz\_graf@{wypisz\_graf}}
+\index{wypisz\_graf@{wypisz\_graf}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypisz\_graf()}{wypisz\_graf()}}
+{\footnotesize\ttfamily void wypisz\+\_\+graf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -\/\texorpdfstring{$>$}{>} y) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graph} & -\/ mapa zawierajaca graf skierowany \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d}\label{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d} 
+\index{funkcje.h@{funkcje.h}!wyswietl\_cykle@{wyswietl\_cykle}}
+\index{wyswietl\_cykle@{wyswietl\_cykle}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_cykle()}{wyswietl\_cykle()}}
+{\footnotesize\ttfamily void wyswietl\+\_\+cykle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles }\end{DoxyParamCaption})}
+
+
+
+funkcja wyswietla podany vektor cyklow 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cycles} & -\/ vektor zawierajacy cykle do wyswietlenia \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}\label{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e} 
+\index{funkcje.h@{funkcje.h}!zapisz\_cykle@{zapisz\_cykle}}
+\index{zapisz\_cykle@{zapisz\_cykle}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{zapisz\_cykle()}{zapisz\_cykle()}}
+{\footnotesize\ttfamily void zapisz\+\_\+cykle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles,  }\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+funkcja zapisuje podany vektor cyklow do pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cycles} & -\/ vektor zawierajacy cykle do zapisania \\
+\hline
+{\em filename} & -\/ nazwa pliku \\
 \hline
 \end{DoxyParams}

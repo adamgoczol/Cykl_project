@@ -1,3 +1,5 @@
+/** @file */
+
 #include "funkcje.h"
 
 bool porownaj(std::vector<int> v1, std::vector<int> v2)
@@ -20,7 +22,6 @@ Graph czytaj_graf(const std::string& nazwa_pliku) {
             std::stringstream ss(linia);
 
             ss >> start >> strzalki >> stop;
-            //std::cout << start << strzalki << stop << std::endl;
             graph[start].push_back(stop);
         }
         in.close();
@@ -57,8 +58,9 @@ Cycles szukaj_cyklow(const Graph& graph) {
 
     for (const auto& el : graph) {
         std::set<int> visited;
+        std::cout << el.first << '/' << graph.size() << std::endl;
         podszukanie(graph, el.first, el.first, cycles, starts, visited, 0);
-        std::cout << std::endl;
+        
     }
     return cycles;
 }
@@ -73,15 +75,11 @@ void podszukanie(const Graph& graph, const int starting, int node,
     if (node == starting and depth != 0) {
         if (czy_nowy_cykl(cycles, cycle)) {
             cycles.push_back(cycle);
-            std::cout << "|| ";
         }
-        else {
-            std::cout << "* ";
-        }
+
         return;
     }
     if (visited.count(node) != 0) {
-        std::cout << "! ";
         return;
     }
     cycle.push_back(node);
@@ -90,12 +88,15 @@ void podszukanie(const Graph& graph, const int starting, int node,
         
         
         depth++;
-        std::cout << node << " ";
         podszukanie(graph, starting, el, cycles, cycle, visited, depth);
     }
 }
 
 void wyswietl_cykle(const Cycles& cycles) {
+    if (cycles.empty()) {
+        std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
+        return;
+    }
     std::cout << "Cykle znalezione w podanym grafie skierowanym:" << std::endl;
     for (const auto& el : cycles) {
         for (const auto& sub : el) {
@@ -103,4 +104,23 @@ void wyswietl_cykle(const Cycles& cycles) {
         }
         std::cout << el[0] << std::endl;
     }
+}
+
+void zapisz_cykle(const Cycles& cycles, const std::string filename) {
+    if (cycles.empty()) {
+        std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
+        return;
+    }
+    std::ofstream out(filename);
+
+    if (out) {
+        for (const auto& el : cycles) {
+            for (const auto& sub : el) {
+                out << sub << " -> ";
+            }
+            out << el[0] << std::endl;
+        }
+    }
+
+    
 }

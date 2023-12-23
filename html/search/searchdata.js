@@ -1,10 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "cdflmrvwz",
+  0: "cfgmpswz",
   1: "fm",
-  2: "cw",
-  3: "v",
-  4: "dlrz"
+  2: "cpswz",
+  3: "cg"
 };
 
 var indexSectionNames =
@@ -12,8 +11,7 @@ var indexSectionNames =
   0: "all",
   1: "files",
   2: "functions",
-  3: "typedefs",
-  4: "pages"
+  3: "typedefs"
 };
 
 var indexSectionLabels =
@@ -21,7 +19,6 @@ var indexSectionLabels =
   0: "Wszystko",
   1: "Pliki",
   2: "Funkcje",
-  3: "Definicje typów",
-  4: "Strony"
+  3: "Definicje typów"
 };
 

@@ -1,0 +1,137 @@
+\doxysection{Dokumentacja pliku funkcje.\+cpp}
+\hypertarget{funkcje_8cpp}{}\label{funkcje_8cpp}\index{funkcje.cpp@{funkcje.cpp}}
+{\ttfamily \#include "{}funkcje.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{funkcje_8cpp_a27c2e773ee9fe4285e472a2d5b3b4217}\label{funkcje_8cpp_a27c2e773ee9fe4285e472a2d5b3b4217} 
+bool {\bfseries porownaj} (std\+::vector$<$ int $>$ v1, std\+::vector$<$ int $>$ v2)
+\item 
+\mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \mbox{\hyperlink{funkcje_8cpp_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\+\_\+graf}} (const std\+::string \&nazwa\+\_\+pliku)
+\begin{DoxyCompactList}\small\item\em funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_ae4e008b2ce4eb1ee6f62a7873ec10570}{wypisz\+\_\+graf}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -\/\texorpdfstring{$>$}{>} y) \end{DoxyCompactList}\item 
+\Hypertarget{funkcje_8cpp_a2e8400cbfca88d600fcbe703366c1469}\label{funkcje_8cpp_a2e8400cbfca88d600fcbe703366c1469} 
+bool {\bfseries czy\+\_\+nowy\+\_\+cykl} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, const \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} \&cycle)
+\item 
+\mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \mbox{\hyperlink{funkcje_8cpp_ae1a0acf88f57b3707ae80834482df172}{szukaj\+\_\+cyklow}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
+\begin{DoxyCompactList}\small\item\em funkcja zwraca znalezione cykle w podanym grafie skierowanym \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a158b2a646e35abe8080ea5bd158885ab}{podszukanie}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph, const int starting, int node, \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} cycle, std\+::set$<$ int $>$ visited, int depth)
+\begin{DoxyCompactList}\small\item\em rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a9f67ac023a1569352a7410b28a6b2f4d}{wyswietl\+\_\+cykle}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles)
+\begin{DoxyCompactList}\small\item\em funkcja wyswietla podany vektor cyklow \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\+\_\+cykle}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, const std\+::string filename)
+\begin{DoxyCompactList}\small\item\em funkcja zapisuje podany vektor cyklow do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{funkcje_8cpp_a8b4173825cfd79a623a343d01ee8f3de}\label{funkcje_8cpp_a8b4173825cfd79a623a343d01ee8f3de} 
+\index{funkcje.cpp@{funkcje.cpp}!czytaj\_graf@{czytaj\_graf}}
+\index{czytaj\_graf@{czytaj\_graf}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{czytaj\_graf()}{czytaj\_graf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} czytaj\+\_\+graf (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+
+
+funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape 
+
+
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & -\/ nazwa pliku z ktorego chcemy czytac \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+mapa zawierajaca graf skierowany 
+\end{DoxyReturn}
+\Hypertarget{funkcje_8cpp_a158b2a646e35abe8080ea5bd158885ab}\label{funkcje_8cpp_a158b2a646e35abe8080ea5bd158885ab} 
+\index{funkcje.cpp@{funkcje.cpp}!podszukanie@{podszukanie}}
+\index{podszukanie@{podszukanie}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{podszukanie()}{podszukanie()}}
+{\footnotesize\ttfamily void podszukanie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph,  }\item[{const int}]{starting,  }\item[{int}]{node,  }\item[{\mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles,  }\item[{\mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}}}]{cycle,  }\item[{std\+::set$<$ int $>$}]{visited,  }\item[{int}]{depth }\end{DoxyParamCaption})}
+
+
+
+rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graph} & -\/ graf skierowany \\
+\hline
+{\em starting} & -\/ poczatek ktory musi byc koncem cyklu \\
+\hline
+{\em node} & -\/ aktualnie sprawdzana krawedz grafu skierowanego \\
+\hline
+{\em cycles} & -\/ vektor zawierajacy znalezione cykle \\
+\hline
+{\em cycle} & -\/ aktualnie sprawdzany cykl \\
+\hline
+{\em visited} & -\/ odwiedzone krawedzie \\
+\hline
+{\em depth} & -\/ glebokosc rekurencji \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8cpp_ae1a0acf88f57b3707ae80834482df172}\label{funkcje_8cpp_ae1a0acf88f57b3707ae80834482df172} 
+\index{funkcje.cpp@{funkcje.cpp}!szukaj\_cyklow@{szukaj\_cyklow}}
+\index{szukaj\_cyklow@{szukaj\_cyklow}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{szukaj\_cyklow()}{szukaj\_cyklow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} szukaj\+\_\+cyklow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+funkcja zwraca znalezione cykle w podanym grafie skierowanym 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graph} & -\/ graf skierowany \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+vektor zawierajacy znalezione cykle 
+\end{DoxyReturn}
+\Hypertarget{funkcje_8cpp_ae4e008b2ce4eb1ee6f62a7873ec10570}\label{funkcje_8cpp_ae4e008b2ce4eb1ee6f62a7873ec10570} 
+\index{funkcje.cpp@{funkcje.cpp}!wypisz\_graf@{wypisz\_graf}}
+\index{wypisz\_graf@{wypisz\_graf}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wypisz\_graf()}{wypisz\_graf()}}
+{\footnotesize\ttfamily void wypisz\+\_\+graf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -\/\texorpdfstring{$>$}{>} y) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graph} & -\/ mapa zawierajaca graf skierowany \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8cpp_a9f67ac023a1569352a7410b28a6b2f4d}\label{funkcje_8cpp_a9f67ac023a1569352a7410b28a6b2f4d} 
+\index{funkcje.cpp@{funkcje.cpp}!wyswietl\_cykle@{wyswietl\_cykle}}
+\index{wyswietl\_cykle@{wyswietl\_cykle}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{wyswietl\_cykle()}{wyswietl\_cykle()}}
+{\footnotesize\ttfamily void wyswietl\+\_\+cykle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles }\end{DoxyParamCaption})}
+
+
+
+funkcja wyswietla podany vektor cyklow 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cycles} & -\/ vektor zawierajacy cykle do wyswietlenia \\
+\hline
+\end{DoxyParams}
+\Hypertarget{funkcje_8cpp_a9db5b459e15e8df304d7a7396c4a369e}\label{funkcje_8cpp_a9db5b459e15e8df304d7a7396c4a369e} 
+\index{funkcje.cpp@{funkcje.cpp}!zapisz\_cykle@{zapisz\_cykle}}
+\index{zapisz\_cykle@{zapisz\_cykle}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{zapisz\_cykle()}{zapisz\_cykle()}}
+{\footnotesize\ttfamily void zapisz\+\_\+cykle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles,  }\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+funkcja zapisuje podany vektor cyklow do pliku 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cycles} & -\/ vektor zawierajacy cykle do zapisania \\
+\hline
+{\em filename} & -\/ nazwa pliku \\
+\hline
+\end{DoxyParams}

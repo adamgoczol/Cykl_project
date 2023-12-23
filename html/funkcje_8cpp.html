@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cykl: Dokumentacja pliku funkcje.h</title>
+<title>Cykl: Dokumentacja pliku funkcje.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,56 +71,36 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Definicje typów</a> &#124;
 <a href="#func-members">Funkcje</a>  </div>
-  <div class="headertitle"><div class="title">Dokumentacja pliku funkcje.h</div></div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku funkcje.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;map&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
-</div>
-<p><a href="funkcje_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Definicje typów</h2></td></tr>
-<tr class="memitem:adfd30ded4fa0120db28ead55eb863549" id="r_adfd30ded4fa0120db28ead55eb863549"><td class="memItemLeft" align="right" valign="top"><a id="adfd30ded4fa0120db28ead55eb863549" name="adfd30ded4fa0120db28ead55eb863549"></a>
-typedef std::map&lt; int, std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
-<tr class="memdesc:adfd30ded4fa0120db28ead55eb863549"><td class="mdescLeft">&#160;</td><td class="mdescRight">mapa zwierajaca wierzcholki grafu skierowanego, np 'a' -&gt; 'b' oznacza ze 'a' jest polaczone z 'b', a 'b' z 'a' juz nie <br /></td></tr>
-<tr class="separator:adfd30ded4fa0120db28ead55eb863549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8c44162d3ede8d55ed7c3993129c0e9" id="r_ad8c44162d3ede8d55ed7c3993129c0e9"><td class="memItemLeft" align="right" valign="top"><a id="ad8c44162d3ede8d55ed7c3993129c0e9" name="ad8c44162d3ede8d55ed7c3993129c0e9"></a>
-typedef std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Cycle</b></td></tr>
-<tr class="memdesc:ad8c44162d3ede8d55ed7c3993129c0e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">vektor zawierajacy pojedynczy cykl z grafu skierowanego np ('a' -&gt; 'b' -&gt; 'c', z czego cykl konczy sie na 'c', nie na 'a') <br /></td></tr>
-<tr class="separator:ad8c44162d3ede8d55ed7c3993129c0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa81f1eb15f43621436ef4db6f15466b1" id="r_aa81f1eb15f43621436ef4db6f15466b1"><td class="memItemLeft" align="right" valign="top"><a id="aa81f1eb15f43621436ef4db6f15466b1" name="aa81f1eb15f43621436ef4db6f15466b1"></a>
-typedef std::vector&lt; <a class="el" href="funkcje_8h.html#ad8c44162d3ede8d55ed7c3993129c0e9">Cycle</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Cycles</b></td></tr>
-<tr class="memdesc:aa81f1eb15f43621436ef4db6f15466b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">vektor zawierajacy wszystkie cykle wystepujace w grafie skierowanym <br /></td></tr>
-<tr class="separator:aa81f1eb15f43621436ef4db6f15466b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<div class="textblock"><code>#include &quot;<a class="el" href="funkcje_8h_source.html">funkcje.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Funkcje</h2></td></tr>
-<tr class="memitem:a8b4173825cfd79a623a343d01ee8f3de" id="r_a8b4173825cfd79a623a343d01ee8f3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a8b4173825cfd79a623a343d01ee8f3de">czytaj_graf</a> (const std::string &amp;nazwa_pliku)</td></tr>
+<tr class="memitem:a27c2e773ee9fe4285e472a2d5b3b4217" id="r_a27c2e773ee9fe4285e472a2d5b3b4217"><td class="memItemLeft" align="right" valign="top"><a id="a27c2e773ee9fe4285e472a2d5b3b4217" name="a27c2e773ee9fe4285e472a2d5b3b4217"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>porownaj</b> (std::vector&lt; int &gt; v1, std::vector&lt; int &gt; v2)</td></tr>
+<tr class="separator:a27c2e773ee9fe4285e472a2d5b3b4217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4173825cfd79a623a343d01ee8f3de" id="r_a8b4173825cfd79a623a343d01ee8f3de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#a8b4173825cfd79a623a343d01ee8f3de">czytaj_graf</a> (const std::string &amp;nazwa_pliku)</td></tr>
 <tr class="memdesc:a8b4173825cfd79a623a343d01ee8f3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape  <br /></td></tr>
 <tr class="separator:a8b4173825cfd79a623a343d01ee8f3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e008b2ce4eb1ee6f62a7873ec10570" id="r_ae4e008b2ce4eb1ee6f62a7873ec10570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ae4e008b2ce4eb1ee6f62a7873ec10570">wypisz_graf</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph)</td></tr>
+<tr class="memitem:ae4e008b2ce4eb1ee6f62a7873ec10570" id="r_ae4e008b2ce4eb1ee6f62a7873ec10570"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#ae4e008b2ce4eb1ee6f62a7873ec10570">wypisz_graf</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph)</td></tr>
 <tr class="memdesc:ae4e008b2ce4eb1ee6f62a7873ec10570"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -&gt; y)  <br /></td></tr>
 <tr class="separator:ae4e008b2ce4eb1ee6f62a7873ec10570"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a0acf88f57b3707ae80834482df172" id="r_ae1a0acf88f57b3707ae80834482df172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ae1a0acf88f57b3707ae80834482df172">szukaj_cyklow</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph)</td></tr>
+<tr class="memitem:a2e8400cbfca88d600fcbe703366c1469" id="r_a2e8400cbfca88d600fcbe703366c1469"><td class="memItemLeft" align="right" valign="top"><a id="a2e8400cbfca88d600fcbe703366c1469" name="a2e8400cbfca88d600fcbe703366c1469"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>czy_nowy_cykl</b> (const <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles, const <a class="el" href="funkcje_8h.html#ad8c44162d3ede8d55ed7c3993129c0e9">Cycle</a> &amp;cycle)</td></tr>
+<tr class="separator:a2e8400cbfca88d600fcbe703366c1469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1a0acf88f57b3707ae80834482df172" id="r_ae1a0acf88f57b3707ae80834482df172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#ae1a0acf88f57b3707ae80834482df172">szukaj_cyklow</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph)</td></tr>
 <tr class="memdesc:ae1a0acf88f57b3707ae80834482df172"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja zwraca znalezione cykle w podanym grafie skierowanym  <br /></td></tr>
 <tr class="separator:ae1a0acf88f57b3707ae80834482df172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a158b2a646e35abe8080ea5bd158885ab" id="r_a158b2a646e35abe8080ea5bd158885ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a158b2a646e35abe8080ea5bd158885ab">podszukanie</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph, const int starting, int node, <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles, <a class="el" href="funkcje_8h.html#ad8c44162d3ede8d55ed7c3993129c0e9">Cycle</a> cycle, std::set&lt; int &gt; visited, int depth)</td></tr>
+<tr class="memitem:a158b2a646e35abe8080ea5bd158885ab" id="r_a158b2a646e35abe8080ea5bd158885ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#a158b2a646e35abe8080ea5bd158885ab">podszukanie</a> (const <a class="el" href="funkcje_8h.html#adfd30ded4fa0120db28ead55eb863549">Graph</a> &amp;graph, const int starting, int node, <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles, <a class="el" href="funkcje_8h.html#ad8c44162d3ede8d55ed7c3993129c0e9">Cycle</a> cycle, std::set&lt; int &gt; visited, int depth)</td></tr>
 <tr class="memdesc:a158b2a646e35abe8080ea5bd158885ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku  <br /></td></tr>
 <tr class="separator:a158b2a646e35abe8080ea5bd158885ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f67ac023a1569352a7410b28a6b2f4d" id="r_a9f67ac023a1569352a7410b28a6b2f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a9f67ac023a1569352a7410b28a6b2f4d">wyswietl_cykle</a> (const <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles)</td></tr>
+<tr class="memitem:a9f67ac023a1569352a7410b28a6b2f4d" id="r_a9f67ac023a1569352a7410b28a6b2f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#a9f67ac023a1569352a7410b28a6b2f4d">wyswietl_cykle</a> (const <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles)</td></tr>
 <tr class="memdesc:a9f67ac023a1569352a7410b28a6b2f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja wyswietla podany vektor cyklow  <br /></td></tr>
 <tr class="separator:a9f67ac023a1569352a7410b28a6b2f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db5b459e15e8df304d7a7396c4a369e" id="r_a9db5b459e15e8df304d7a7396c4a369e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a9db5b459e15e8df304d7a7396c4a369e">zapisz_cykle</a> (const <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles, const std::string filename)</td></tr>
+<tr class="memitem:a9db5b459e15e8df304d7a7396c4a369e" id="r_a9db5b459e15e8df304d7a7396c4a369e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8cpp.html#a9db5b459e15e8df304d7a7396c4a369e">zapisz_cykle</a> (const <a class="el" href="funkcje_8h.html#aa81f1eb15f43621436ef4db6f15466b1">Cycles</a> &amp;cycles, const std::string filename)</td></tr>
 <tr class="memdesc:a9db5b459e15e8df304d7a7396c4a369e"><td class="mdescLeft">&#160;</td><td class="mdescRight">funkcja zapisuje podany vektor cyklow do pliku  <br /></td></tr>
 <tr class="separator:a9db5b459e15e8df304d7a7396c4a369e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>

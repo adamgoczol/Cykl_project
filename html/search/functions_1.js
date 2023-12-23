@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wypisz_5fpary_0',['wypisz_pary',['../funkcje_8h.html#a2bd41d1a48c7bfb6a4a5fb8033574af1',1,'funkcje.cpp']]]
+  ['podszukanie_0',['podszukanie',['../funkcje_8cpp.html#a158b2a646e35abe8080ea5bd158885ab',1,'podszukanie(const Graph &amp;graph, const int starting, int node, Cycles &amp;cycles, Cycle cycle, std::set&lt; int &gt; visited, int depth):&#160;funkcje.cpp'],['../funkcje_8h.html#a158b2a646e35abe8080ea5bd158885ab',1,'podszukanie(const Graph &amp;graph, const int starting, int node, Cycles &amp;cycles, Cycle cycle, std::set&lt; int &gt; visited, int depth):&#160;funkcje.cpp']]]
 ];

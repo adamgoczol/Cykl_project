@@ -24,7 +24,6 @@
 */
 var menudata={children:[
 {text:"Strona główna",url:"index.html"},
-{text:"Dodatkowe strony",url:"pages.html"},
 {text:"Pliki",url:"files.html",children:[
 {text:"Lista plików",url:"files.html"},
 {text:"Składowe plików",url:"globals.html",children:[
