@@ -2,12 +2,14 @@
 
 #include "funkcje.h"
 
+
 bool porownaj(std::vector<int> v1, std::vector<int> v2)
 {
     std::sort(v1.begin(), v1.end());
     std::sort(v2.begin(), v2.end());
     return v1 == v2;
 }
+
 
 Graph czytaj_graf(const std::string& nazwa_pliku) {
 
@@ -33,6 +35,7 @@ Graph czytaj_graf(const std::string& nazwa_pliku) {
 
 }
 
+
 void wypisz_graf(const Graph& graph) {
     for (const auto& el : graph) {
         for (const auto& st : el.second) {
@@ -41,7 +44,7 @@ void wypisz_graf(const Graph& graph) {
 
     }
 }
-    
+ 
 
 bool czy_nowy_cykl(const Cycles& cycles, const Cycle& cycle) {
     for (const auto& el : cycles) {
@@ -49,6 +52,7 @@ bool czy_nowy_cykl(const Cycles& cycles, const Cycle& cycle) {
     }
     return 1;
 }
+
 
 Cycles szukaj_cyklow(const Graph& graph) {
 
@@ -58,7 +62,7 @@ Cycles szukaj_cyklow(const Graph& graph) {
 
     for (const auto& el : graph) {
         std::set<int> visited;
-        std::cout << el.first << '/' << graph.size() << std::endl;
+        //std::cout << el.first << '/' << graph.size() << std::endl;
         podszukanie(graph, el.first, el.first, cycles, starts, visited, 0);
         
     }
@@ -92,6 +96,7 @@ void podszukanie(const Graph& graph, const int starting, int node,
     }
 }
 
+
 void wyswietl_cykle(const Cycles& cycles) {
     if (cycles.empty()) {
         std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
@@ -106,14 +111,16 @@ void wyswietl_cykle(const Cycles& cycles) {
     }
 }
 
+
 void zapisz_cykle(const Cycles& cycles, const std::string filename) {
-    if (cycles.empty()) {
-        std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
-        return;
-    }
+    
     std::ofstream out(filename);
 
     if (out) {
+        if (cycles.empty()) {
+            std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
+            return;
+        }
         for (const auto& el : cycles) {
             for (const auto& sub : el) {
                 out << sub << " -> ";

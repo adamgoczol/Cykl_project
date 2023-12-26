@@ -32,6 +32,14 @@ typedef std::vector<int> Cycle;
 
 typedef std::vector<Cycle> Cycles;
 
+/**
+ * @brief funkcja porownuje dwa vektory (uzywa sortowania)
+ * @param v1 - pierwszy vektor
+ * @param v2 - drugi vektor
+ * @return true jesli sa identyczne, false jesli nie
+*/
+
+bool porownaj(std::vector<int> v1, std::vector<int> v2);
 
 /**
  * @brief funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape
@@ -40,6 +48,16 @@ typedef std::vector<Cycle> Cycles;
 */
 
 Graph czytaj_graf(const std::string& nazwa_pliku);
+
+/**
+ * @brief funkcja sprawdza czy podany cykl wystepuje w vektorze cyklow
+ * @param cycles - vektor cyklow
+ * @param cycle - pojedynczy vektor zawierajacy cykl
+ * @return true jesli nie wystepuje, false jesli wystepuje
+*/
+
+bool czy_nowy_cykl(const Cycles& cycles, const Cycle& cycle);
+
 
 /**
  * @brief funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -> y)

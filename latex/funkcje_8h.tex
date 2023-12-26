@@ -24,8 +24,12 @@ typedef std\+::vector$<$ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c39931
 \doxysubsubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
+bool \mbox{\hyperlink{funkcje_8h_a27c2e773ee9fe4285e472a2d5b3b4217}{porownaj}} (std\+::vector$<$ int $>$ v1, std\+::vector$<$ int $>$ v2)
+\begin{DoxyCompactList}\small\item\em funkcja porownuje dwa vektory (uzywa sortowania) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \mbox{\hyperlink{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\+\_\+graf}} (const std\+::string \&nazwa\+\_\+pliku)
 \begin{DoxyCompactList}\small\item\em funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a2e8400cbfca88d600fcbe703366c1469}{czy\+\_\+nowy\+\_\+cykl}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, const \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} \&cycle)
+\begin{DoxyCompactList}\small\item\em funkcja sprawdza czy podany cykl wystepuje w vektorze cyklow \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570}{wypisz\+\_\+graf}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
 \begin{DoxyCompactList}\small\item\em funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -\/\texorpdfstring{$>$}{>} y) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \mbox{\hyperlink{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}{szukaj\+\_\+cyklow}} (const \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \&graph)
@@ -39,6 +43,26 @@ void \mbox{\hyperlink{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\+\_\+
 
 
 \doxysubsection{Dokumentacja funkcji}
+\Hypertarget{funkcje_8h_a2e8400cbfca88d600fcbe703366c1469}\label{funkcje_8h_a2e8400cbfca88d600fcbe703366c1469} 
+\index{funkcje.h@{funkcje.h}!czy\_nowy\_cykl@{czy\_nowy\_cykl}}
+\index{czy\_nowy\_cykl@{czy\_nowy\_cykl}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{czy\_nowy\_cykl()}{czy\_nowy\_cykl()}}
+{\footnotesize\ttfamily bool czy\+\_\+nowy\+\_\+cykl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&}]{cycles,  }\item[{const \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}} \&}]{cycle }\end{DoxyParamCaption})}
+
+
+
+funkcja sprawdza czy podany cykl wystepuje w vektorze cyklow 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cycles} & -\/ vektor cyklow \\
+\hline
+{\em cycle} & -\/ pojedynczy vektor zawierajacy cykl \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jesli nie wystepuje, false jesli wystepuje 
+\end{DoxyReturn}
 \Hypertarget{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}\label{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de} 
 \index{funkcje.h@{funkcje.h}!czytaj\_graf@{czytaj\_graf}}
 \index{czytaj\_graf@{czytaj\_graf}!funkcje.h@{funkcje.h}}
@@ -84,6 +108,26 @@ rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku
 {\em depth} & -\/ glebokosc rekurencji \\
 \hline
 \end{DoxyParams}
+\Hypertarget{funkcje_8h_a27c2e773ee9fe4285e472a2d5b3b4217}\label{funkcje_8h_a27c2e773ee9fe4285e472a2d5b3b4217} 
+\index{funkcje.h@{funkcje.h}!porownaj@{porownaj}}
+\index{porownaj@{porownaj}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{porownaj()}{porownaj()}}
+{\footnotesize\ttfamily bool porownaj (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{v1,  }\item[{std\+::vector$<$ int $>$}]{v2 }\end{DoxyParamCaption})}
+
+
+
+funkcja porownuje dwa vektory (uzywa sortowania) 
+
+
+\begin{DoxyParams}{Parametry}
+{\em v1} & -\/ pierwszy vektor \\
+\hline
+{\em v2} & -\/ drugi vektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true jesli sa identyczne, false jesli nie 
+\end{DoxyReturn}
 \Hypertarget{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}\label{funkcje_8h_ae1a0acf88f57b3707ae80834482df172} 
 \index{funkcje.h@{funkcje.h}!szukaj\_cyklow@{szukaj\_cyklow}}
 \index{szukaj\_cyklow@{szukaj\_cyklow}!funkcje.h@{funkcje.h}}

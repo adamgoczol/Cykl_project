@@ -22,23 +22,27 @@
 \DoxyCodeLine{00028\ }
 \DoxyCodeLine{00033\ \textcolor{keyword}{typedef}\ std::vector<Cycle>\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}};}
 \DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ }
-\DoxyCodeLine{00042\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\ \mbox{\hyperlink{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\_graf}}(\textcolor{keyword}{const}\ std::string\&\ nazwa\_pliku);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funkcje_8h_a27c2e773ee9fe4285e472a2d5b3b4217}{porownaj}}(std::vector<int>\ v1,\ std::vector<int>\ v2);}
 \DoxyCodeLine{00043\ }
-\DoxyCodeLine{00049\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570}{wypisz\_graf}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph);}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00057\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\ \mbox{\hyperlink{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}{szukaj\_cyklow}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph);}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00070\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab}{podszukanie}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ starting,\ \textcolor{keywordtype}{int}\ node,}
-\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles,\ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}}\ cycle,\ std::set<int>\ visited,\ \textcolor{keywordtype}{int}\ depth);}
-\DoxyCodeLine{00072\ }
-\DoxyCodeLine{00078\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d}{wyswietl\_cykle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles);}
-\DoxyCodeLine{00079\ }
-\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\_cykle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles,\ \textcolor{keyword}{const}\ std::string\ filename);}
-\DoxyCodeLine{00087\ }
-\DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ }
-\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !FUNKCJE\_H}}
-\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00050\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\ \mbox{\hyperlink{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\_graf}}(\textcolor{keyword}{const}\ std::string\&\ nazwa\_pliku);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00059\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{funkcje_8h_a2e8400cbfca88d600fcbe703366c1469}{czy\_nowy\_cykl}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}}\&\ cycle);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_ae4e008b2ce4eb1ee6f62a7873ec10570}{wypisz\_graf}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\ \mbox{\hyperlink{funkcje_8h_ae1a0acf88f57b3707ae80834482df172}{szukaj\_cyklow}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph);}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00088\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab}{podszukanie}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}}\&\ graph,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ starting,\ \textcolor{keywordtype}{int}\ node,}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles,\ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c3993129c0e9}{Cycle}}\ cycle,\ std::set<int>\ visited,\ \textcolor{keywordtype}{int}\ depth);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00096\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d}{wyswietl\_cykle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00104\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\_cykle}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}}\&\ cycles,\ \textcolor{keyword}{const}\ std::string\ filename);}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !FUNKCJE\_H}}
+\DoxyCodeLine{00109\ }
 
 \end{DoxyCode}

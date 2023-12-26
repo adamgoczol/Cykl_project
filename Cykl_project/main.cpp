@@ -9,10 +9,11 @@ int main(int ile, char * params[])
     std::string infile;
     std::string outfile;
 
-    if (ile < 5) {
-        std::cout << "braujace parametry" << std::endl;
+    if (ile != 5) {
+        std::cout << "niewlasciwa ilosc argumentow" << std::endl;
         return 1;
     }
+
     for (int i = 0; i < ile; i++) {
 
         if (std::string(params[i]) == "-g") infile = std::string(params[i + 1]);
