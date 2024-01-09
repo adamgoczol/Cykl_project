@@ -118,7 +118,7 @@ void zapisz_cykle(const Cycles& cycles, const std::string filename) {
 
     if (out) {
         if (cycles.empty()) {
-            std::cout << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
+            out << "W podanym grafie skierowanym nie wystepuja cykle" << std::endl;
             return;
         }
         for (const auto& el : cycles) {
