@@ -29,7 +29,7 @@ Graph czytaj_graf(const std::string& nazwa_pliku) {
         in.close();
     }
     else {
-        std::cout << "problem przy otwieraniu pliku" << std::endl;
+        std::cout << "podany plik nie istnieje lub przy odczytywaniu wystapil blad" << std::endl;
     }
     return graph;
 
@@ -127,6 +127,9 @@ void zapisz_cykle(const Cycles& cycles, const std::string filename) {
             }
             out << el[0] << std::endl;
         }
+    }
+    else {
+        std::cout << "podczas zapisywania cykli do pliku wystapil blad" << std::endl;
     }
 
     
