@@ -1,12 +1,18 @@
-/** @file */
+/** @file main.cpp
+    @author Adam Goczol
+    @date 13.01.2024
+    @brief plik zawiera funkcje main
+*/
 
 #include "funkcje.h"
 
 int main(int n, char * params[])
 {
+    std::cout << std::endl;
+
     std::set<std::string> valid_args{ "-g", "-c" };
 
-    if (n != 5) {
+    if (n > 5) {
         std::cout << "niewlasciwa ilosc argumentow" << std::endl;
         return 1;
     }
@@ -37,7 +43,7 @@ int main(int n, char * params[])
     Graph graph = czytaj_graf(args["-g"]);
 
     if (graph.size() == 0) {
-        std::cout << "graf skierowany nie posiada polaczen" << std::endl;
+        std::cout << "graf skierowany nie posiada polaczen lub przy wczytywaniu wystapil blad" << std::endl;
         return 1;
     }
 

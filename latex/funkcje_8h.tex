@@ -1,5 +1,10 @@
 \doxysection{Dokumentacja pliku funkcje.\+h}
 \hypertarget{funkcje_8h}{}\label{funkcje_8h}\index{funkcje.h@{funkcje.h}}
+
+
+plik zawiera deklaracje funkcji  
+
+
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$fstream$>$}\newline
 {\ttfamily \#include $<$set$>$}\newline
@@ -24,6 +29,8 @@ typedef std\+::vector$<$ \mbox{\hyperlink{funkcje_8h_ad8c44162d3ede8d55ed7c39931
 \doxysubsubsection*{Funkcje}
 \begin{DoxyCompactItemize}
 \item 
+bool \mbox{\hyperlink{funkcje_8h_ad7f071e2e1ca097856fa23f204e7dbd0}{isnumber}} (std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em funkcja sprawdza czy podany string mozna przekonwertowac na int \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{funkcje_8h_a27c2e773ee9fe4285e472a2d5b3b4217}{porownaj}} (std\+::vector$<$ int $>$ v1, std\+::vector$<$ int $>$ v2)
 \begin{DoxyCompactList}\small\item\em funkcja porownuje dwa vektory (uzywa sortowania) \end{DoxyCompactList}\item 
 \mbox{\hyperlink{funkcje_8h_adfd30ded4fa0120db28ead55eb863549}{Graph}} \mbox{\hyperlink{funkcje_8h_a8b4173825cfd79a623a343d01ee8f3de}{czytaj\+\_\+graf}} (const std\+::string \&nazwa\+\_\+pliku)
@@ -40,6 +47,17 @@ void \mbox{\hyperlink{funkcje_8h_a9f67ac023a1569352a7410b28a6b2f4d}{wyswietl\+\_
 \begin{DoxyCompactList}\small\item\em funkcja wyswietla podany vektor cyklow \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{funkcje_8h_a9db5b459e15e8df304d7a7396c4a369e}{zapisz\+\_\+cykle}} (const \mbox{\hyperlink{funkcje_8h_aa81f1eb15f43621436ef4db6f15466b1}{Cycles}} \&cycles, const std\+::string filename)
 \begin{DoxyCompactList}\small\item\em funkcja zapisuje podany vektor cyklow do pliku \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+plik zawiera deklaracje funkcji 
+
+\begin{DoxyAuthor}{Autor}
+Adam Goczol 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+13.\+01.\+2024 
+\end{DoxyDate}
 
 
 \doxysubsection{Dokumentacja funkcji}
@@ -80,6 +98,27 @@ funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape
 \end{DoxyParams}
 \begin{DoxyReturn}{Zwraca}
 mapa zawierajaca graf skierowany 
+\end{DoxyReturn}
+\Hypertarget{funkcje_8h_ad7f071e2e1ca097856fa23f204e7dbd0}\label{funkcje_8h_ad7f071e2e1ca097856fa23f204e7dbd0} 
+\index{funkcje.h@{funkcje.h}!isnumber@{isnumber}}
+\index{isnumber@{isnumber}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{isnumber()}{isnumber()}}
+{\footnotesize\ttfamily bool isnumber (\begin{DoxyParamCaption}\item[{std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+funkcja sprawdza czy podany string mozna przekonwertowac na int 
+
+
+\begin{DoxyParams}{Parametry}
+{\em text} & -\/ string do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Autor}
+Adam Goczol 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Zwraca}
+true jesli sie da, false jesli nie 
 \end{DoxyReturn}
 \Hypertarget{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab}\label{funkcje_8h_a158b2a646e35abe8080ea5bd158885ab} 
 \index{funkcje.h@{funkcje.h}!podszukanie@{podszukanie}}

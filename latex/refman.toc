@@ -1,0 +1,33 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Indeks plików}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Lista plików}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Dokumentacja plików}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Dokumentacja pliku funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Opis szczegółowy}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Dokumentacja funkcji}{4}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}czy\_nowy\_cykl()}{4}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}czytaj\_graf()}{4}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}isnumber()}{4}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}podszukanie()}{5}{subsubsection.2.1.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}porownaj()}{5}{subsubsection.2.1.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.2.6}szukaj\_cyklow()}{6}{subsubsection.2.1.2.6}%
+\contentsline {subsubsection}{\numberline {2.1.2.7}wypisz\_graf()}{6}{subsubsection.2.1.2.7}%
+\contentsline {subsubsection}{\numberline {2.1.2.8}wyswietl\_cykle()}{6}{subsubsection.2.1.2.8}%
+\contentsline {subsubsection}{\numberline {2.1.2.9}zapisz\_cykle()}{6}{subsubsection.2.1.2.9}%
+\contentsline {section}{\numberline {2.2}Dokumentacja pliku funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Opis szczegółowy}{8}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Dokumentacja funkcji}{8}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}czy\_nowy\_cykl()}{8}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}czytaj\_graf()}{8}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}isnumber()}{9}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}podszukanie()}{9}{subsubsection.2.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.2.5}porownaj()}{9}{subsubsection.2.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.2.6}szukaj\_cyklow()}{10}{subsubsection.2.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.2.7}wypisz\_graf()}{10}{subsubsection.2.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.2.8}wyswietl\_cykle()}{10}{subsubsection.2.2.2.8}%
+\contentsline {subsubsection}{\numberline {2.2.2.9}zapisz\_cykle()}{11}{subsubsection.2.2.2.9}%
+\contentsline {section}{\numberline {2.3}funkcje.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Dokumentacja pliku main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Opis szczegółowy}{12}{subsection.2.4.1}%
+\contentsline {chapter}{Skorowidz}{13}{section*.5}%

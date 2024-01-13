@@ -1,4 +1,8 @@
-/** @file */
+/** @file funkcje.h 
+    @author Adam Goczol
+    @date 13.01.2024
+    @brief plik zawiera deklaracje funkcji
+*/
 
 #ifndef FUNKCJE_H
 #define FUNKCJE_H
@@ -31,6 +35,16 @@ typedef std::vector<int> Cycle;
 */
 
 typedef std::vector<Cycle> Cycles;
+
+/**
+ * @brief funkcja sprawdza czy podany string mozna przekonwertowac na int
+ * @param text - string do sprawdzenia
+ * @author Adam Goczol
+ * @return true jesli sie da, false jesli nie
+*/
+
+bool isnumber(std::string& text);
+
 
 /**
  * @brief funkcja porownuje dwa vektory (uzywa sortowania)

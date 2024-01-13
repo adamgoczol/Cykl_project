@@ -1,7 +1,17 @@
-/** @file */
+/** @file funkcje.cpp
+    @author Adam Goczol
+    @date 13.01.2024
+    @brief plik zawiera zawartosc funkcji
+*/
 
 #include "funkcje.h"
 
+bool isnumber(std::string& text) {
+    for (auto& el : text) {
+        if (!isdigit(el)) return 0;
+    }
+    return 1;
+}
 
 bool porownaj(std::vector<int> v1, std::vector<int> v2)
 {
@@ -17,14 +27,28 @@ Graph czytaj_graf(const std::string& nazwa_pliku) {
     std::ifstream in(nazwa_pliku);
     
     if (in) {
+        int ak_linia = 1;
         std::string strzalki;
         std::string linia;
-        int start, stop;
+        std::string start_s, stop_s;
         while (std::getline(in, linia, ',')) {
             std::stringstream ss(linia);
 
-            ss >> start >> strzalki >> stop;
+            ss >> start_s >> strzalki >> stop_s;
+
+            if (!isnumber(start_s) or !isnumber(stop_s)) {
+                std::cout << "nieprawidlowy znak {" << (!isnumber(start_s) ? start_s : stop_s) << 
+                   "} w linii " << ak_linia << " pliku " << nazwa_pliku << std::endl;
+                Graph empty;
+                return empty;
+            }
+
+            int start = stoi(start_s);
+            int stop = stoi(stop_s);
+
+            
             graph[start].push_back(stop);
+            ak_linia += 1;
         }
         in.close();
     }

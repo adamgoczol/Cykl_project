@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="pl">
+  <compounddef id="funkcje_8cpp" kind="file" language="C++">
+    <compoundname>funkcje.cpp</compoundname>
+    <includes refid="funkcje_8h" local="yes">funkcje.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>funkcje.cpp</label>
+        <link refid="funkcje_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>funkcje.h</label>
+        <link refid="funkcje_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>set</label>
+      </node>
+      <node id="9">
+        <label>sstream</label>
+      </node>
+      <node id="8">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>utility</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isnumber</definition>
+        <argsstring>(std::string &amp;text)</argsstring>
+        <name>isnumber</name>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>funkcja sprawdza czy podany string mozna przekonwertowac na int </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- string do sprawdzenia </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="author"><para>Adam Goczol </para>
+</simplesect>
+<simplesect kind="return"><para>true jesli sie da, false jesli nie </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="9" column="6" bodyfile="funkcje.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a27c2e773ee9fe4285e472a2d5b3b4217" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool porownaj</definition>
+        <argsstring>(std::vector&lt; int &gt; v1, std::vector&lt; int &gt; v2)</argsstring>
+        <name>porownaj</name>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; int &gt;</type>
+          <declname>v2</declname>
+        </param>
+        <briefdescription>
+<para>funkcja porownuje dwa vektory (uzywa sortowania) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pierwszy vektor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- drugi vektor </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true jesli sa identyczne, false jesli nie </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="16" column="6" bodyfile="funkcje.cpp" bodystart="16" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a8b4173825cfd79a623a343d01ee8f3de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref></type>
+        <definition>Graph czytaj_graf</definition>
+        <argsstring>(const std::string &amp;nazwa_pliku)</argsstring>
+        <name>czytaj_graf</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>nazwa_pliku</declname>
+        </param>
+        <briefdescription>
+<para>funkcja odczytuje zawartosc podanego pliku i konwertuje go na mape </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nazwa_pliku</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku z ktorego chcemy czytac </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>mapa zawierajaca graf skierowany </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="24" column="7" bodyfile="funkcje.cpp" bodystart="24" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1ae4e008b2ce4eb1ee6f62a7873ec10570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wypisz_graf</definition>
+        <argsstring>(const Graph &amp;graph)</argsstring>
+        <name>wypisz_graf</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref> &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+<para>funkcja wypisuje zawartosc mapy w postaci grafu skierowanego (x -&gt; y) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- mapa zawierajaca graf skierowany </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="63" column="6" bodyfile="funkcje.cpp" bodystart="63" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a2e8400cbfca88d600fcbe703366c1469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool czy_nowy_cykl</definition>
+        <argsstring>(const Cycles &amp;cycles, const Cycle &amp;cycle)</argsstring>
+        <name>czy_nowy_cykl</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref> &amp;</type>
+          <declname>cycles</declname>
+        </param>
+        <param>
+          <type>const <ref refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kindref="member">Cycle</ref> &amp;</type>
+          <declname>cycle</declname>
+        </param>
+        <briefdescription>
+<para>funkcja sprawdza czy podany cykl wystepuje w vektorze cyklow </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- vektor cyklow </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cycle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pojedynczy vektor zawierajacy cykl </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true jesli nie wystepuje, false jesli wystepuje </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="73" column="6" bodyfile="funkcje.cpp" bodystart="73" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1ae1a0acf88f57b3707ae80834482df172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref></type>
+        <definition>Cycles szukaj_cyklow</definition>
+        <argsstring>(const Graph &amp;graph)</argsstring>
+        <name>szukaj_cyklow</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref> &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <briefdescription>
+<para>funkcja zwraca znalezione cykle w podanym grafie skierowanym </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- graf skierowany </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vektor zawierajacy znalezione cykle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="81" column="8" bodyfile="funkcje.cpp" bodystart="81" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a158b2a646e35abe8080ea5bd158885ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void podszukanie</definition>
+        <argsstring>(const Graph &amp;graph, const int starting, int node, Cycles &amp;cycles, Cycle cycle, std::set&lt; int &gt; visited, int depth)</argsstring>
+        <name>podszukanie</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref> &amp;</type>
+          <declname>graph</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>starting</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref> &amp;</type>
+          <declname>cycles</declname>
+        </param>
+        <param>
+          <type><ref refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kindref="member">Cycle</ref></type>
+          <declname>cycle</declname>
+        </param>
+        <param>
+          <type>std::set&lt; int &gt;</type>
+          <declname>visited</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+<para>rekurencyjna funkcja znajdujaca cykle w grafie o podanym poczatku </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- graf skierowany </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- poczatek ktory musi byc koncem cyklu </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- aktualnie sprawdzana krawedz grafu skierowanego </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- vektor zawierajacy znalezione cykle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cycle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- aktualnie sprawdzany cykl </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visited</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- odwiedzone krawedzie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- glebokosc rekurencji </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="97" column="6" bodyfile="funkcje.cpp" bodystart="97" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a9f67ac023a1569352a7410b28a6b2f4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void wyswietl_cykle</definition>
+        <argsstring>(const Cycles &amp;cycles)</argsstring>
+        <name>wyswietl_cykle</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref> &amp;</type>
+          <declname>cycles</declname>
+        </param>
+        <briefdescription>
+<para>funkcja wyswietla podany vektor cyklow </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- vektor zawierajacy cykle do wyswietlenia </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="124" column="6" bodyfile="funkcje.cpp" bodystart="124" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="funkcje_8cpp_1a9db5b459e15e8df304d7a7396c4a369e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void zapisz_cykle</definition>
+        <argsstring>(const Cycles &amp;cycles, const std::string filename)</argsstring>
+        <name>zapisz_cykle</name>
+        <param>
+          <type>const <ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref> &amp;</type>
+          <declname>cycles</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>funkcja zapisuje podany vektor cyklow do pliku </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cycles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- vektor zawierajacy cykle do zapisania </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- nazwa pliku </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="funkcje.cpp" line="139" column="6" bodyfile="funkcje.cpp" bodystart="139" bodyend="160"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>plik zawiera zawartosc funkcji </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Adam Goczol </para>
+</simplesect>
+<simplesect kind="date"><para>13.01.2024 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="funkcje_8h" kindref="compound">funkcje.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" kindref="member">isnumber</ref>(std::string&amp;<sp/>text)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>text)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!isdigit(el))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1a27c2e773ee9fe4285e472a2d5b3b4217" kindref="member">porownaj</ref>(std::vector&lt;int&gt;<sp/>v1,<sp/>std::vector&lt;int&gt;<sp/>v2)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(v1.begin(),<sp/>v1.end());</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(v2.begin(),<sp/>v2.end());</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v1<sp/>==<sp/>v2;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref><sp/><ref refid="funkcje_8cpp_1a8b4173825cfd79a623a343d01ee8f3de" kindref="member">czytaj_graf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>nazwa_pliku)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref><sp/>graph;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>in(nazwa_pliku);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ak_linia<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>strzalki;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>linia;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>start_s,<sp/>stop_s;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(std::getline(in,<sp/>linia,<sp/></highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss(linia);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&gt;&gt;<sp/>start_s<sp/>&gt;&gt;<sp/>strzalki<sp/>&gt;&gt;<sp/>stop_s;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" kindref="member">isnumber</ref>(start_s)<sp/>or<sp/>!<ref refid="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" kindref="member">isnumber</ref>(stop_s))<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;nieprawidlowy<sp/>znak<sp/>{&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>(!<ref refid="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" kindref="member">isnumber</ref>(start_s)<sp/>?<sp/>start_s<sp/>:<sp/>stop_s)<sp/>&lt;&lt;<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;}<sp/>w<sp/>linii<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>ak_linia<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>pliku<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>nazwa_pliku<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref><sp/>empty;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>empty;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>stoi(start_s);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>stop<sp/>=<sp/>stoi(stop_s);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>graph[start].push_back(stop);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ak_linia<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in.close();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;podany<sp/>plik<sp/>nie<sp/>istnieje<sp/>lub<sp/>przy<sp/>odczytywaniu<sp/>wystapil<sp/>blad&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>graph;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1ae4e008b2ce4eb1ee6f62a7873ec10570" kindref="member">wypisz_graf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref>&amp;<sp/>graph)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>graph)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>st<sp/>:<sp/>el.second)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>el.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-&gt;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>st<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1a2e8400cbfca88d600fcbe703366c1469" kindref="member">czy_nowy_cykl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref>&amp;<sp/>cycles,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kindref="member">Cycle</ref>&amp;<sp/>cycle)<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>cycles)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="funkcje_8cpp_1a27c2e773ee9fe4285e472a2d5b3b4217" kindref="member">porownaj</ref>(el,<sp/>cycle))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref><sp/><ref refid="funkcje_8cpp_1ae1a0acf88f57b3707ae80834482df172" kindref="member">szukaj_cyklow</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref>&amp;<sp/>graph)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref><sp/>cycles;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kindref="member">Cycle</ref><sp/>starts;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>graph)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;int&gt;<sp/>visited;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout<sp/>&lt;&lt;<sp/>el.first<sp/>&lt;&lt;<sp/>&apos;/&apos;<sp/>&lt;&lt;<sp/>graph.size()<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="funkcje_8cpp_1a158b2a646e35abe8080ea5bd158885ab" kindref="member">podszukanie</ref>(graph,<sp/>el.first,<sp/>el.first,<sp/>cycles,<sp/>starts,<sp/>visited,<sp/>0);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cycles;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1a158b2a646e35abe8080ea5bd158885ab" kindref="member">podszukanie</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kindref="member">Graph</ref>&amp;<sp/>graph,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>starting,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>node,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref>&amp;<sp/>cycles,<sp/><ref refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kindref="member">Cycle</ref><sp/>cycle,<sp/>std::set&lt;int&gt;<sp/>visited,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>depth)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(graph.count(node)<sp/>==<sp/>0<sp/>or<sp/>graph.at(node).empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node<sp/>==<sp/>starting<sp/>and<sp/>depth<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="funkcje_8cpp_1a2e8400cbfca88d600fcbe703366c1469" kindref="member">czy_nowy_cykl</ref>(cycles,<sp/>cycle))<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cycles.push_back(cycle);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(visited.count(node)<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>cycle.push_back(node);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>visited.insert(node);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>graph.at(node))<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depth++;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="funkcje_8cpp_1a158b2a646e35abe8080ea5bd158885ab" kindref="member">podszukanie</ref>(graph,<sp/>starting,<sp/>el,<sp/>cycles,<sp/>cycle,<sp/>visited,<sp/>depth);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1a9f67ac023a1569352a7410b28a6b2f4d" kindref="member">wyswietl_cykle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref>&amp;<sp/>cycles)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cycles.empty())<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;W<sp/>podanym<sp/>grafie<sp/>skierowanym<sp/>nie<sp/>wystepuja<sp/>cykle&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Cykle<sp/>znalezione<sp/>w<sp/>podanym<sp/>grafie<sp/>skierowanym:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>cycles)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>sub<sp/>:<sp/>el)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>sub<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-&gt;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>el[0]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="funkcje_8cpp_1a9db5b459e15e8df304d7a7396c4a369e" kindref="member">zapisz_cykle</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kindref="member">Cycles</ref>&amp;<sp/>cycles,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>filename)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>out(filename);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(out)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cycles.empty())<sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;W<sp/>podanym<sp/>grafie<sp/>skierowanym<sp/>nie<sp/>wystepuja<sp/>cykle&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>el<sp/>:<sp/>cycles)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>sub<sp/>:<sp/>el)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>sub<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>-&gt;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/>el[0]<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;podczas<sp/>zapisywania<sp/>cykli<sp/>do<sp/>pliku<sp/>wystapil<sp/>blad&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="funkcje.cpp"/>
+  </compounddef>
+</doxygen>

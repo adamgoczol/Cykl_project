@@ -1,0 +1,73 @@
+\begin{theindex}
+
+  \item {czy\_nowy\_cykl}
+    \subitem {funkcje.cpp}, \hyperpage{4}
+    \subitem {funkcje.h}, \hyperpage{8}
+  \item {czytaj\_graf}
+    \subitem {funkcje.cpp}, \hyperpage{4}
+    \subitem {funkcje.h}, \hyperpage{8}
+
+  \indexspace
+
+  \item {funkcje.cpp}, \hyperpage{3}
+    \subitem {czy\_nowy\_cykl}, \hyperpage{4}
+    \subitem {czytaj\_graf}, \hyperpage{4}
+    \subitem {isnumber}, \hyperpage{4}
+    \subitem {podszukanie}, \hyperpage{5}
+    \subitem {porownaj}, \hyperpage{5}
+    \subitem {szukaj\_cyklow}, \hyperpage{5}
+    \subitem {wypisz\_graf}, \hyperpage{6}
+    \subitem {wyswietl\_cykle}, \hyperpage{6}
+    \subitem {zapisz\_cykle}, \hyperpage{6}
+  \item {funkcje.h}, \hyperpage{7}
+    \subitem {czy\_nowy\_cykl}, \hyperpage{8}
+    \subitem {czytaj\_graf}, \hyperpage{8}
+    \subitem {isnumber}, \hyperpage{8}
+    \subitem {podszukanie}, \hyperpage{9}
+    \subitem {porownaj}, \hyperpage{9}
+    \subitem {szukaj\_cyklow}, \hyperpage{10}
+    \subitem {wypisz\_graf}, \hyperpage{10}
+    \subitem {wyswietl\_cykle}, \hyperpage{10}
+    \subitem {zapisz\_cykle}, \hyperpage{11}
+
+  \indexspace
+
+  \item {isnumber}
+    \subitem {funkcje.cpp}, \hyperpage{4}
+    \subitem {funkcje.h}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{11}
+
+  \indexspace
+
+  \item {podszukanie}
+    \subitem {funkcje.cpp}, \hyperpage{5}
+    \subitem {funkcje.h}, \hyperpage{9}
+  \item {porownaj}
+    \subitem {funkcje.cpp}, \hyperpage{5}
+    \subitem {funkcje.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {szukaj\_cyklow}
+    \subitem {funkcje.cpp}, \hyperpage{5}
+    \subitem {funkcje.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {wypisz\_graf}
+    \subitem {funkcje.cpp}, \hyperpage{6}
+    \subitem {funkcje.h}, \hyperpage{10}
+  \item {wyswietl\_cykle}
+    \subitem {funkcje.cpp}, \hyperpage{6}
+    \subitem {funkcje.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {zapisz\_cykle}
+    \subitem {funkcje.cpp}, \hyperpage{6}
+    \subitem {funkcje.h}, \hyperpage{11}
+
+\end{theindex}

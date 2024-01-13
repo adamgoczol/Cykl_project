@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="pl">
+  <compound refid="funkcje_8cpp" kind="file"><name>funkcje.cpp</name>
+    <member refid="funkcje_8cpp_1ad7f071e2e1ca097856fa23f204e7dbd0" kind="function"><name>isnumber</name></member>
+    <member refid="funkcje_8cpp_1a27c2e773ee9fe4285e472a2d5b3b4217" kind="function"><name>porownaj</name></member>
+    <member refid="funkcje_8cpp_1a8b4173825cfd79a623a343d01ee8f3de" kind="function"><name>czytaj_graf</name></member>
+    <member refid="funkcje_8cpp_1ae4e008b2ce4eb1ee6f62a7873ec10570" kind="function"><name>wypisz_graf</name></member>
+    <member refid="funkcje_8cpp_1a2e8400cbfca88d600fcbe703366c1469" kind="function"><name>czy_nowy_cykl</name></member>
+    <member refid="funkcje_8cpp_1ae1a0acf88f57b3707ae80834482df172" kind="function"><name>szukaj_cyklow</name></member>
+    <member refid="funkcje_8cpp_1a158b2a646e35abe8080ea5bd158885ab" kind="function"><name>podszukanie</name></member>
+    <member refid="funkcje_8cpp_1a9f67ac023a1569352a7410b28a6b2f4d" kind="function"><name>wyswietl_cykle</name></member>
+    <member refid="funkcje_8cpp_1a9db5b459e15e8df304d7a7396c4a369e" kind="function"><name>zapisz_cykle</name></member>
+  </compound>
+  <compound refid="funkcje_8h" kind="file"><name>funkcje.h</name>
+    <member refid="funkcje_8h_1adfd30ded4fa0120db28ead55eb863549" kind="typedef"><name>Graph</name></member>
+    <member refid="funkcje_8h_1ad8c44162d3ede8d55ed7c3993129c0e9" kind="typedef"><name>Cycle</name></member>
+    <member refid="funkcje_8h_1aa81f1eb15f43621436ef4db6f15466b1" kind="typedef"><name>Cycles</name></member>
+    <member refid="funkcje_8h_1ad7f071e2e1ca097856fa23f204e7dbd0" kind="function"><name>isnumber</name></member>
+    <member refid="funkcje_8h_1a27c2e773ee9fe4285e472a2d5b3b4217" kind="function"><name>porownaj</name></member>
+    <member refid="funkcje_8h_1a8b4173825cfd79a623a343d01ee8f3de" kind="function"><name>czytaj_graf</name></member>
+    <member refid="funkcje_8h_1a2e8400cbfca88d600fcbe703366c1469" kind="function"><name>czy_nowy_cykl</name></member>
+    <member refid="funkcje_8h_1ae4e008b2ce4eb1ee6f62a7873ec10570" kind="function"><name>wypisz_graf</name></member>
+    <member refid="funkcje_8h_1ae1a0acf88f57b3707ae80834482df172" kind="function"><name>szukaj_cyklow</name></member>
+    <member refid="funkcje_8h_1a158b2a646e35abe8080ea5bd158885ab" kind="function"><name>podszukanie</name></member>
+    <member refid="funkcje_8h_1a9f67ac023a1569352a7410b28a6b2f4d" kind="function"><name>wyswietl_cykle</name></member>
+    <member refid="funkcje_8h_1a9db5b459e15e8df304d7a7396c4a369e" kind="function"><name>zapisz_cykle</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a9428236a75bf57bfda76d4a835cddddd" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>
